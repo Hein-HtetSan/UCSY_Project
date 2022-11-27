@@ -7,6 +7,7 @@
 
 :root{
     --primary-color: #41493B;
+    --secondary-transparent: rgba(67,79,53,.9);
     --white-color: #ffffff;
     --primary-transparent: rgba(65, 79, 53, 0.495);
     --fsize-21px: 21px;
@@ -137,7 +138,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder{
     width: 110px;
     height: 30px;
     font-size: 14px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-transparent);
     color: var(--white-color);
     font-weight: 600 !important;
     border: 1px solid var(--primary-transparent);
@@ -147,8 +148,13 @@ input[type="text"]::placeholder, input[type="password"]::placeholder{
     transition: .1s ease-in;
 }
 
-.back-btn:hover, .login-btn:hover{
-    scale: 1.05;
+.back-btn:hover{
+    background-color: var(--primary-transparent);
+    color: var(--white-color);
+}
+
+.login-btn:hover{
+    background-color: var(--primary-color);
 }
 
 .cpy-right{
