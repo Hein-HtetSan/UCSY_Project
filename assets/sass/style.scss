@@ -4,3 +4,9 @@ $primary: $gray-900;
 p{
     color: $primary;
 }
+
+.outer-box{
+    width: 600px;
+    height: 400px;
+    background-color: $bg-gray;
+}
