@@ -7,10 +7,12 @@
 
 :root{
     --primary-color: #41493B;
+    --primary-red: #ff2052;
     --secondary-transparent: rgba(67,79,53,.9);
     --white-color: #ffffff;
     --primary-transparent: rgba(65, 79, 53, 0.495);
     --fsize-21px: 21px;
+    --plum-red: #db5a6b;
 }
 
 .body{
@@ -100,6 +102,10 @@ input[type="email"], input[type="password"]{
     font-size: 13px;
 }
 
+input:focus{
+    border-bottom: 1.5px solid var(--primary-color) !important;
+}
+
 input[type="email"]:hover, input[type="password"]:hover{
     border-bottom: 1px solid var(--primary-color);
 }
@@ -149,8 +155,9 @@ input[type="text"]::placeholder, input[type="password"]::placeholder{
 }
 
 .back-btn:hover{
-    background-color: var(--primary-transparent);
+    background-color: var(--primary-red);
     color: var(--white-color);
+    border: 1px solid red;
 }
 
 .login-btn:hover{
